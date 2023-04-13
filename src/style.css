@@ -1,0 +1,180 @@
+.album {
+    text-align: center;
+    margin-left: 5%;
+}
+.lijst{
+    height: 750px;
+    width: 750px;
+    background-color: white;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 50px 200px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 15px;
+    margin-right: 15px;
+    float: left;
+}
+.lijst .underImage{
+  display: flex;
+  flex-flow: row wrap;
+}
+.titel, .deleteButton{
+  margin-top: -5px;
+}
+.uploadText{
+  margin-top: -50px;
+}
+.deleteButton{
+  margin-left: 5%;
+  height: 15%;
+  width: 15%;
+}
+.underImage{
+  text-align: center;
+  margin-left: 35%;
+}
+img {
+    padding: 2%;
+    width: 700px;
+    height: 700px;
+}
+.button{
+    height: 10%;
+    width: 10%;
+}
+.gallery{
+    position: absolute;
+}
+.fotoForm{
+  display: none;
+  position: fixed;
+  margin-left: 25%;
+  margin-top: 15%;
+  width: 50%;
+  z-index: 8;
+  left: 0;
+  top: 0;
+  box-shadow: 0 2px 5px #f5f5f5;
+  background: #eee;
+  padding: 20px;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 10%;
+  width: 10%;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eff;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+h2,p {
+  margin: 0 0 20px;
+  font-weight: 400;
+  color: #999;
+      }
+span {
+  color: #666;
+  display: block;
+/*        padding: 0 0 5px;*/
+}
+.fotoForm input,textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #1c87c9;
+  outline: none;
+}
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #1c87c9;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+button:hover {
+  background: #2371a0;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+button.button {
+  background: none;
+  border-top: none;
+  outline: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: #02274a 1px solid;
+  padding: 0 0 3px 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+button.button:hover {
+    border-bottom: #a99567 1px solid;
+    color: #a99567;
+}
