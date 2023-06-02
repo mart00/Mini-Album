@@ -46,7 +46,7 @@
 </head>
 <body>
     <main>
-      <button type="button" id="please" onclick="myAjax()">Delete</button>
+      <!-- <button type="button" id="please" onclick="myAjax()">Delete</button> -->
         <section class="gallery">
             <div class="modal-content">
                 <div class="contact-form">

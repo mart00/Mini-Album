@@ -7,21 +7,20 @@ $dbName = "minigallerij";
 $conn = mysqli_connect($servername, $username, $password, $dbName);
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-$val = mysqli_query('SELECT 1 FROM images LIMIT 1');
-
-if($val !== FALSE)
-{
-  CREATE TABLE `images` (
- `pictureId` int NOT NULL AUTO_INCREMENT,
- `naam` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
- `album` int NOT NULL,
- `locatie` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
- `albumLaag` int NOT NULL,
- `albumId` int NOT NULL,
- `motherAlbumId` int NOT NULL,
- PRIMARY KEY (`pictureId`)
- )
-}
+// $val = mysqli_query('SELECT 1 FROM images LIMIT 1');
+//
+// if($val !== FALSE)  {
+//   CREATE TABLE `images` (
+//  `pictureId` int NOT NULL AUTO_INCREMENT,
+//  `naam` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+//  `album` int NOT NULL,
+//  `locatie` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+//  `albumLaag` int NOT NULL,
+//  `albumId` int NOT NULL,
+//  `motherAlbumId` int NOT NULL,
+//  PRIMARY KEY (`pictureId`)
+// );
+// }
 
 
 //standaard album data meegeven / in database zetten
@@ -29,7 +28,7 @@ $coolNames = array("Cool Images","Cool Frog","Cool Cat","Cool Man");
 $coolAlbum = array("1","0","0","0");
 $coolLocaties = array("fotos\standaard\cool.jpg","fotos\standaard\coolcat.jpg","fotos\standaard\coolfrig.jpg","fotos\standaard\coolman.png");
 $coolAlbumLaag = array("0","1","1","1");
-$coolAlbumId = array("0","1","1","1");
+$coolAlbumId = array("1","1","1","1");
 $motherAlbumId = array("0","1","1","1");
 
 $query = "SELECT * FROM images";
